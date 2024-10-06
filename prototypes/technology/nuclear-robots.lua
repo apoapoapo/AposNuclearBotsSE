@@ -11,7 +11,7 @@ data:extend {
             },
             {
                 type = "unlock-recipe",
-                recipe = "construction-robot-nuclear-big",
+                recipe = "construction-robot-nuclear-fast",
             },
             {
                 type = "unlock-recipe",

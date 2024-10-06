@@ -167,7 +167,7 @@ data:extend {
     },
     {
         type = "construction-robot",
-        name = "construction-robot-nuclear-big",
+        name = "construction-robot-nuclear-fast",
         icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
         icon_size = 32,
         flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
@@ -178,8 +178,8 @@ data:extend {
         dying_explosion = "massive-explosion",
         collision_box = { { 0, 0 }, { 0, 0 } },
         selection_box = { { -0.5, -1.5 }, { 0.5, -0.5 } },
-        max_payload_size = 97,
-        speed = 0.04,
+        max_payload_size = 7,
+        speed = 0.08,
         transfer_distance = 0.5,
         max_energy = "1.5MJ",
         energy_per_tick = "0kJ",
@@ -347,7 +347,7 @@ data:extend {
     },
     {
         type = "recipe",
-        name = "construction-robot-nuclear-big",
+        name = "construction-robot-nuclear-fast",
         enabled = false,
         ingredients = {
             { "construction-robot", 8 },
@@ -357,7 +357,7 @@ data:extend {
             { "se-aeroframe-scaffold", 10 },
             { "processing-unit", 10 }
         },
-        result = "construction-robot-nuclear-big",
+        result = "construction-robot-nuclear-fast",
     },
     -- item
     {
@@ -372,12 +372,12 @@ data:extend {
     },
     {
         type = "item",
-        name = "construction-robot-nuclear-big",
+        name = "construction-robot-nuclear-fast",
         icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
         icon_size = 32,
         subgroup = "logistic-network",
         order = "a[robot]-c[construction-robot]-c[nuclear]",
-        place_result = "construction-robot-nuclear-big",
+        place_result = "construction-robot-nuclear-fast",
         stack_size = 50,
     },
 }
