@@ -3,7 +3,7 @@ data:extend {
     {
         type = "construction-robot",
         name = "construction-robot-nuclear",
-        icon = "__KingsNuclearBots__/graphics/icons/construction-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
         icon_size = 32,
         flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
         minable = { hardness = 0.1, mining_time = 0.1, result = "construction-robot-nuclear" },
@@ -24,7 +24,7 @@ data:extend {
         max_to_charge = 0.95,
         working_light = { intensity = 0.8, size = 3 },
         idle = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear.png",
             priority = "high",
             line_length = 16,
             width = 32,
@@ -34,7 +34,7 @@ data:extend {
             direction_count = 16,
         },
         in_motion = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear.png",
             priority = "high",
             line_length = 16,
             width = 32,
@@ -45,7 +45,7 @@ data:extend {
             y = 36,
         },
         shadow_idle = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
             priority = "high",
             line_length = 16,
             width = 50,
@@ -55,7 +55,7 @@ data:extend {
             direction_count = 16,
         },
         shadow_in_motion = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
             priority = "high",
             line_length = 16,
             width = 50,
@@ -65,7 +65,7 @@ data:extend {
             direction_count = 16,
         },
         working = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-working.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear-working.png",
             priority = "high",
             line_length = 2,
             width = 28,
@@ -78,7 +78,7 @@ data:extend {
         shadow_working = {
             stripes = util.multiplystripes(2, {
                 {
-                    filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
+                    filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
                     width_in_frames = 16,
                     height_in_frames = 1,
                 },
@@ -168,7 +168,7 @@ data:extend {
     {
         type = "construction-robot",
         name = "construction-robot-nuclear-big",
-        icon = "__KingsNuclearBots__/graphics/icons/construction-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
         icon_size = 32,
         flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
         minable = { hardness = 0.1, mining_time = 0.1, result = "construction-robot-nuclear" },
@@ -189,7 +189,7 @@ data:extend {
         max_to_charge = 0.95,
         working_light = { intensity = 0.8, size = 3 },
         idle = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear.png",
             priority = "high",
             line_length = 16,
             width = 32,
@@ -199,7 +199,7 @@ data:extend {
             direction_count = 16,
         },
         in_motion = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear.png",
             priority = "high",
             line_length = 16,
             width = 32,
@@ -210,7 +210,7 @@ data:extend {
             y = 36,
         },
         shadow_idle = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
             priority = "high",
             line_length = 16,
             width = 50,
@@ -220,7 +220,7 @@ data:extend {
             direction_count = 16,
         },
         shadow_in_motion = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
             priority = "high",
             line_length = 16,
             width = 50,
@@ -230,7 +230,7 @@ data:extend {
             direction_count = 16,
         },
         working = {
-            filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-working.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear-working.png",
             priority = "high",
             line_length = 2,
             width = 28,
@@ -243,7 +243,7 @@ data:extend {
         shadow_working = {
             stripes = util.multiplystripes(2, {
                 {
-                    filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
+                    filename = "__AposNuclearBotsSE__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
                     width_in_frames = 16,
                     height_in_frames = 1,
                 },
@@ -358,7 +358,7 @@ data:extend {
     {
         type = "item",
         name = "construction-robot-nuclear",
-        icon = "__KingsNuclearBots__/graphics/icons/construction-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
         icon_size = 32,
         subgroup = "logistic-network",
         order = "a[robot]-c[construction-robot]-c[nuclear]",
@@ -368,7 +368,7 @@ data:extend {
     {
         type = "item",
         name = "construction-robot-nuclear-big",
-        icon = "__KingsNuclearBots__/graphics/icons/construction-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
         icon_size = 32,
         subgroup = "logistic-network",
         order = "a[robot]-c[construction-robot]-c[nuclear]",

@@ -9,7 +9,7 @@ data:extend {
     {
         type = "logistic-robot",
         name = "logistic-robot-nuclear",
-        icon = "__KingsNuclearBots__/graphics/icons/logistic-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/logistic-robot-nuclear.png",
         icon_size = 32,
         flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
         minable = { hardness = 0.1, mining_time = 0.1, result = "logistic-robot-nuclear" },
@@ -28,7 +28,7 @@ data:extend {
         min_to_charge = 0.2,
         max_to_charge = 0.95,
         idle = {
-            filename = "__KingsNuclearBots__/graphics/entity/logistic-robot/logistic-robot-nuclear.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/logistic-robot/logistic-robot-nuclear.png",
             priority = "high",
             line_length = 16,
             width = 41,
@@ -39,7 +39,7 @@ data:extend {
             y = 42,
         },
         idle_with_cargo = {
-            filename = "__KingsNuclearBots__/graphics/entity/logistic-robot/logistic-robot-nuclear.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/logistic-robot/logistic-robot-nuclear.png",
             priority = "high",
             line_length = 16,
             width = 41,
@@ -49,7 +49,7 @@ data:extend {
             direction_count = 16,
         },
         in_motion = {
-            filename = "__KingsNuclearBots__/graphics/entity/logistic-robot/logistic-robot-nuclear.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/logistic-robot/logistic-robot-nuclear.png",
             priority = "high",
             line_length = 16,
             width = 41,
@@ -60,7 +60,7 @@ data:extend {
             y = 126,
         },
         in_motion_with_cargo = {
-            filename = "__KingsNuclearBots__/graphics/entity/logistic-robot/logistic-robot-nuclear.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/logistic-robot/logistic-robot-nuclear.png",
             priority = "high",
             line_length = 16,
             width = 41,
@@ -71,7 +71,7 @@ data:extend {
             y = 84,
         },
         shadow_idle = {
-            filename = "__KingsNuclearBots__/graphics/entity/logistic-robot/logistic-robot-nuclear-shadow.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/logistic-robot/logistic-robot-nuclear-shadow.png",
             priority = "high",
             line_length = 16,
             width = 59,
@@ -82,7 +82,7 @@ data:extend {
             y = 23,
         },
         shadow_idle_with_cargo = {
-            filename = "__KingsNuclearBots__/graphics/entity/logistic-robot/logistic-robot-nuclear-shadow.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/logistic-robot/logistic-robot-nuclear-shadow.png",
             priority = "high",
             line_length = 16,
             width = 59,
@@ -92,7 +92,7 @@ data:extend {
             direction_count = 16,
         },
         shadow_in_motion = {
-            filename = "__KingsNuclearBots__/graphics/entity/logistic-robot/logistic-robot-nuclear-shadow.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/logistic-robot/logistic-robot-nuclear-shadow.png",
             priority = "high",
             line_length = 16,
             width = 59,
@@ -103,7 +103,7 @@ data:extend {
             y = 23,
         },
         shadow_in_motion_with_cargo = {
-            filename = "__KingsNuclearBots__/graphics/entity/logistic-robot/logistic-robot-nuclear-shadow.png",
+            filename = "__AposNuclearBotsSE__/graphics/entity/logistic-robot/logistic-robot-nuclear-shadow.png",
             priority = "high",
             line_length = 16,
             width = 59,
@@ -134,7 +134,7 @@ data:extend {
     {
         type = "item",
         name = "logistic-robot-nuclear",
-        icon = "__KingsNuclearBots__/graphics/icons/logistic-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/logistic-robot-nuclear.png",
         icon_size = 32,
         subgroup = "logistic-network",
         order = "a[robot]-b[logistic-robot]-c[nuclear]",

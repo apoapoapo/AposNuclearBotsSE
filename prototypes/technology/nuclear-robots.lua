@@ -2,7 +2,7 @@ data:extend {
     {
         type = "technology",
         name = "nuclear-robots",
-        icon = "__KingsNuclearBots__/graphics/technology/nuclear-robotics.png",
+        icon = "__AposNuclearBotsSE__/graphics/technology/nuclear-robotics.png",
         icon_size = 128,
         effects = {
             {
