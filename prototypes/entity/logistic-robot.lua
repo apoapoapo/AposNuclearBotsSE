@@ -19,7 +19,7 @@ data:extend {
         collision_box = { { 0, 0 }, { 0, 0 } },
         selection_box = { { -0.5, -1.5 }, { 0.5, -0.5 } },
         max_payload_size = payload,
-        speed = 0.05,
+        speed = 0.04,
         transfer_distance = 0.5,
         max_energy = "1.5MJ",
         energy_per_tick = "0kJ",
