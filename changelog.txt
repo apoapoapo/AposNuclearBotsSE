@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+  Info:
+    - Change big construction to fast construction bots
+    - Add more beryll items to recipes
+    - Remove bigger-nuclear-cell-stacks setting
+    - Remove drone explosion
+---------------------------------------------------------------------------------------------------
 Version: 0.0.1
   Info:
     - Initial Release
