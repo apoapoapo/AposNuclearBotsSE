@@ -5,6 +5,6 @@
 "factorio_version":"1.1",
 "title":"Apo's Nuclear Bots SE",
 "homepage":"",
-"description":"Nuclear powered robots that don't need to recharge. Forked from King's Nuclear Bots and changed recipes to have it better integrated for Space Exploration. Drones are using RTGs instead of complete nuclear power plants. Also reduce the speed of drones a bit due to higher load / RTG."
-
+"description":"Nuclear powered robots that don't need to recharge. Forked from King's Nuclear Bots and changed recipes to have it better integrated for Space Exploration. Drones are using RTGs instead of complete nuclear power plants. Also reduce the speed of drones a bit due to higher load / RTG. Removes drone explosion on death.",
+"dependencies": ["base", "space-exploration"]
 }
