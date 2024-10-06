@@ -122,11 +122,11 @@ data:extend {
         enabled = false,
         ingredients = {
             { "logistic-robot", 8 },
-            { "se_rtg_equipment-2", 1 },
-            { "se_superconductive_cable", 20 },
-            { "se_aeroframe_pole", 10 },
-            { "se_aeroframe_scaffold", 4 },
-            { "processing_unit", 2 }
+            { "se-rtg-equipment-2", 1 },
+            { "se-superconductive-cable", 20 },
+            { "se-aeroframe-pole", 20 },
+            { "se-aeroframe-scaffold", 10 },
+            { "processing-unit", 10 }
         },
         result = "logistic-robot-nuclear",
     },
