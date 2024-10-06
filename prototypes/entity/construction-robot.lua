@@ -1,19 +1,18 @@
-data:extend(
-{
+data:extend {
     -- entity
     {
         type = "construction-robot",
         name = "construction-robot-nuclear",
         icon = "__KingsNuclearBots__/graphics/icons/construction-robot-nuclear.png",
         icon_size = 32,
-        flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
-        minable = {hardness = 0.1, mining_time = 0.1, result = "construction-robot-nuclear"},
+        flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
+        minable = { hardness = 0.1, mining_time = 0.1, result = "construction-robot-nuclear" },
         resistances = { { type = "fire", percent = 100 }, { type = "acid", percent = 50, decrease = 25 } },
-		hide_resistances = false,
+        hide_resistances = false,
         max_health = 500,
         dying_explosion = "massive-explosion",
-        collision_box = {{0, 0}, {0, 0}},
-        selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
+        collision_box = { { 0, 0 }, { 0, 0 } },
+        selection_box = { { -0.5, -1.5 }, { 0.5, -0.5 } },
         max_payload_size = 1,
         speed = 0.06,
         transfer_distance = 0.5,
@@ -23,7 +22,7 @@ data:extend(
         energy_per_move = "0kJ",
         min_to_charge = 0.2,
         max_to_charge = 0.95,
-        working_light = {intensity = 0.8, size = 3},
+        working_light = { intensity = 0.8, size = 3 },
         idle = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear.png",
             priority = "high",
@@ -31,8 +30,8 @@ data:extend(
             width = 32,
             height = 36,
             frame_count = 1,
-            shift = {0, -0.15625},
-            direction_count = 16
+            shift = { 0, -0.15625 },
+            direction_count = 16,
         },
         in_motion = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear.png",
@@ -41,9 +40,9 @@ data:extend(
             width = 32,
             height = 36,
             frame_count = 1,
-            shift = {0, -0.15625},
+            shift = { 0, -0.15625 },
             direction_count = 16,
-            y = 36
+            y = 36,
         },
         shadow_idle = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
@@ -52,8 +51,8 @@ data:extend(
             width = 50,
             height = 24,
             frame_count = 1,
-            shift = {1.09375, 0.59375},
-            direction_count = 16
+            shift = { 1.09375, 0.59375 },
+            direction_count = 16,
         },
         shadow_in_motion = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
@@ -62,8 +61,8 @@ data:extend(
             width = 50,
             height = 24,
             frame_count = 1,
-            shift = {1.09375, 0.59375},
-            direction_count = 16
+            shift = { 1.09375, 0.59375 },
+            direction_count = 16,
         },
         working = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-working.png",
@@ -72,7 +71,7 @@ data:extend(
             width = 28,
             height = 36,
             frame_count = 2,
-            shift = {0, -0.15625},
+            shift = { 0, -0.15625 },
             direction_count = 16,
             animation_speed = 0.3,
         },
@@ -82,14 +81,14 @@ data:extend(
                     filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
                     width_in_frames = 16,
                     height_in_frames = 1,
-                }
+                },
             }),
             priority = "high",
             width = 50,
             height = 24,
             frame_count = 2,
-            shift = {1.09375, 0.59375},
-            direction_count = 16
+            shift = { 1.09375, 0.59375 },
+            direction_count = 16,
         },
         smoke = {
             filename = "__base__/graphics/entity/smoke-construction/smoke-01.png",
@@ -97,7 +96,7 @@ data:extend(
             height = 32,
             frame_count = 19,
             line_length = 19,
-            shift = {0.078125, -0.15625},
+            shift = { 0.078125, -0.15625 },
             animation_speed = 0.3,
         },
         sparks = {
@@ -107,7 +106,7 @@ data:extend(
                 height = 34,
                 frame_count = 19,
                 line_length = 19,
-                shift = {-0.109375, 0.3125},
+                shift = { -0.109375, 0.3125 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -117,7 +116,7 @@ data:extend(
                 height = 32,
                 frame_count = 19,
                 line_length = 19,
-                shift = {0.03125, 0.125},
+                shift = { 0.03125, 0.125 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -127,7 +126,7 @@ data:extend(
                 height = 29,
                 frame_count = 19,
                 line_length = 19,
-                shift = {-0.0625, 0.203125},
+                shift = { -0.0625, 0.203125 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -137,7 +136,7 @@ data:extend(
                 height = 35,
                 frame_count = 19,
                 line_length = 19,
-                shift = {-0.0625, 0.234375},
+                shift = { -0.0625, 0.234375 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -147,7 +146,7 @@ data:extend(
                 height = 29,
                 frame_count = 19,
                 line_length = 19,
-                shift = {-0.109375, 0.171875},
+                shift = { -0.109375, 0.171875 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -157,28 +156,28 @@ data:extend(
                 height = 36,
                 frame_count = 19,
                 line_length = 19,
-                shift = {0.03125, 0.3125},
+                shift = { 0.03125, 0.3125 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
         },
         working_sound = data.raw["construction-robot"]["construction-robot"].working_sound,
-        cargo_centered = {0.0, 0.2},
-        construction_vector = {0.30, 0.22},
+        cargo_centered = { 0.0, 0.2 },
+        construction_vector = { 0.30, 0.22 },
     },
-	{
+    {
         type = "construction-robot",
         name = "construction-robot-nuclear-big",
         icon = "__KingsNuclearBots__/graphics/icons/construction-robot-nuclear.png",
         icon_size = 32,
-        flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
-        minable = {hardness = 0.1, mining_time = 0.1, result = "construction-robot-nuclear"},
+        flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
+        minable = { hardness = 0.1, mining_time = 0.1, result = "construction-robot-nuclear" },
         resistances = { { type = "fire", percent = 100 }, { type = "acid", percent = 50, decrease = 25 } },
-		hide_resistances = false,
+        hide_resistances = false,
         max_health = 500,
         dying_explosion = "massive-explosion",
-        collision_box = {{0, 0}, {0, 0}},
-        selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
+        collision_box = { { 0, 0 }, { 0, 0 } },
+        selection_box = { { -0.5, -1.5 }, { 0.5, -0.5 } },
         max_payload_size = 97,
         speed = 0.06,
         transfer_distance = 0.5,
@@ -188,7 +187,7 @@ data:extend(
         energy_per_move = "0kJ",
         min_to_charge = 0.2,
         max_to_charge = 0.95,
-        working_light = {intensity = 0.8, size = 3},
+        working_light = { intensity = 0.8, size = 3 },
         idle = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear.png",
             priority = "high",
@@ -196,8 +195,8 @@ data:extend(
             width = 32,
             height = 36,
             frame_count = 1,
-            shift = {0, -0.15625},
-            direction_count = 16
+            shift = { 0, -0.15625 },
+            direction_count = 16,
         },
         in_motion = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear.png",
@@ -206,9 +205,9 @@ data:extend(
             width = 32,
             height = 36,
             frame_count = 1,
-            shift = {0, -0.15625},
+            shift = { 0, -0.15625 },
             direction_count = 16,
-            y = 36
+            y = 36,
         },
         shadow_idle = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
@@ -217,8 +216,8 @@ data:extend(
             width = 50,
             height = 24,
             frame_count = 1,
-            shift = {1.09375, 0.59375},
-            direction_count = 16
+            shift = { 1.09375, 0.59375 },
+            direction_count = 16,
         },
         shadow_in_motion = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
@@ -227,8 +226,8 @@ data:extend(
             width = 50,
             height = 24,
             frame_count = 1,
-            shift = {1.09375, 0.59375},
-            direction_count = 16
+            shift = { 1.09375, 0.59375 },
+            direction_count = 16,
         },
         working = {
             filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-working.png",
@@ -237,7 +236,7 @@ data:extend(
             width = 28,
             height = 36,
             frame_count = 2,
-            shift = {0, -0.15625},
+            shift = { 0, -0.15625 },
             direction_count = 16,
             animation_speed = 0.3,
         },
@@ -247,14 +246,14 @@ data:extend(
                     filename = "__KingsNuclearBots__/graphics/entity/construction-robot/construction-robot-nuclear-shadow.png",
                     width_in_frames = 16,
                     height_in_frames = 1,
-                }
+                },
             }),
             priority = "high",
             width = 50,
             height = 24,
             frame_count = 2,
-            shift = {1.09375, 0.59375},
-            direction_count = 16
+            shift = { 1.09375, 0.59375 },
+            direction_count = 16,
         },
         smoke = {
             filename = "__base__/graphics/entity/smoke-construction/smoke-01.png",
@@ -262,7 +261,7 @@ data:extend(
             height = 32,
             frame_count = 19,
             line_length = 19,
-            shift = {0.078125, -0.15625},
+            shift = { 0.078125, -0.15625 },
             animation_speed = 0.3,
         },
         sparks = {
@@ -272,7 +271,7 @@ data:extend(
                 height = 34,
                 frame_count = 19,
                 line_length = 19,
-                shift = {-0.109375, 0.3125},
+                shift = { -0.109375, 0.3125 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -282,7 +281,7 @@ data:extend(
                 height = 32,
                 frame_count = 19,
                 line_length = 19,
-                shift = {0.03125, 0.125},
+                shift = { 0.03125, 0.125 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -292,7 +291,7 @@ data:extend(
                 height = 29,
                 frame_count = 19,
                 line_length = 19,
-                shift = {-0.0625, 0.203125},
+                shift = { -0.0625, 0.203125 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -302,7 +301,7 @@ data:extend(
                 height = 35,
                 frame_count = 19,
                 line_length = 19,
-                shift = {-0.0625, 0.234375},
+                shift = { -0.0625, 0.234375 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -312,7 +311,7 @@ data:extend(
                 height = 29,
                 frame_count = 19,
                 line_length = 19,
-                shift = {-0.109375, 0.171875},
+                shift = { -0.109375, 0.171875 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
@@ -322,60 +321,58 @@ data:extend(
                 height = 36,
                 frame_count = 19,
                 line_length = 19,
-                shift = {0.03125, 0.3125},
+                shift = { 0.03125, 0.3125 },
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
                 animation_speed = 0.3,
             },
         },
         working_sound = data.raw["construction-robot"]["construction-robot"].working_sound,
-        cargo_centered = {0.0, 0.2},
-        construction_vector = {0.30, 0.22},
+        cargo_centered = { 0.0, 0.2 },
+        construction_vector = { 0.30, 0.22 },
     },
     -- recipe
     {
         type = "recipe",
         name = "construction-robot-nuclear",
         enabled = false,
-        ingredients =
-        {
-            {"construction-robot", 2},
-            {"nuclear-reactor", 1},
-			{"heat-exchanger", 4},
-			{"steam-turbine", 7},
-			{"heat-pipe", 25},
-            {"uranium-fuel-cell", 250}
+        ingredients = {
+            { "construction-robot", 2 },
+            { "nuclear-reactor", 1 },
+            { "heat-exchanger", 4 },
+            { "steam-turbine", 7 },
+            { "heat-pipe", 25 },
+            { "uranium-fuel-cell", 250 },
         },
-        result = "construction-robot-nuclear"
+        result = "construction-robot-nuclear",
     },
-	{
+    {
         type = "recipe",
         name = "construction-robot-nuclear-big",
         enabled = false,
-        ingredients =
-        {
-            {"construction-robot-nuclear", 1},
+        ingredients = {
+            { "construction-robot-nuclear", 1 },
         },
-        result = "construction-robot-nuclear-big"
+        result = "construction-robot-nuclear-big",
     },
     -- item
     {
         type = "item",
         name = "construction-robot-nuclear",
         icon = "__KingsNuclearBots__/graphics/icons/construction-robot-nuclear.png",
-        icon_size = 32,        
+        icon_size = 32,
         subgroup = "logistic-network",
         order = "a[robot]-c[construction-robot]-c[nuclear]",
         place_result = "construction-robot-nuclear",
-        stack_size = 50
+        stack_size = 50,
     },
-	{
+    {
         type = "item",
         name = "construction-robot-nuclear-big",
         icon = "__KingsNuclearBots__/graphics/icons/construction-robot-nuclear.png",
-        icon_size = 32,        
+        icon_size = 32,
         subgroup = "logistic-network",
         order = "a[robot]-c[construction-robot]-c[nuclear]",
         place_result = "construction-robot-nuclear-big",
-        stack_size = 50
+        stack_size = 50,
     },
-})
+}
