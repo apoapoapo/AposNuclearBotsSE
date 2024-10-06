@@ -337,11 +337,11 @@ data:extend {
         enabled = false,
         ingredients = {
             { "construction-robot", 2 },
-            { "nuclear-reactor", 1 },
-            { "heat-exchanger", 4 },
-            { "steam-turbine", 7 },
-            { "heat-pipe", 25 },
-            { "uranium-fuel-cell", 250 },
+            { "se_rtg_equipment", 1 },
+            { "se_superconductive_cable", 8 },
+            { "se_aeroframe_pole", 4 },
+            { "se_aeroframe_scaffold", 2 },
+            { "processing_unit", 2 }
         },
         result = "construction-robot-nuclear",
     },
@@ -350,7 +350,12 @@ data:extend {
         name = "construction-robot-nuclear-big",
         enabled = false,
         ingredients = {
-            { "construction-robot-nuclear", 1 },
+            { "construction-robot", 8 },
+            { "se_rtg_equipment-2", 1 },
+            { "se_superconductive_cable", 20 },
+            { "se_aeroframe_pole", 10 },
+            { "se_aeroframe_scaffold", 4 },
+            { "processing_unit", 2 }
         },
         result = "construction-robot-nuclear-big",
     },

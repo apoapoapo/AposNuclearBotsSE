@@ -121,12 +121,12 @@ data:extend {
         name = "logistic-robot-nuclear",
         enabled = false,
         ingredients = {
-            { "logistic-robot", 5 },
-            { "nuclear-reactor", 1 },
-            { "heat-exchanger", 4 },
-            { "steam-turbine", 7 },
-            { "heat-pipe", 25 },
-            { "uranium-fuel-cell", 1500 },
+            { "logistic-robot", 8 },
+            { "se_rtg_equipment-2", 1 },
+            { "se_superconductive_cable", 20 },
+            { "se_aeroframe_pole", 10 },
+            { "se_aeroframe_scaffold", 4 },
+            { "processing_unit", 2 }
         },
         result = "logistic-robot-nuclear",
     },

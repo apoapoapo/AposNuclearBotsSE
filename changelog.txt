@@ -3,3 +3,4 @@ Version: 0.0.1
   Info:
     - Initial Release
     - Fork from King's Nuclear Bots mod (and edit names in script)
+    - Changed recipe costs fitting better for Space Exploration
