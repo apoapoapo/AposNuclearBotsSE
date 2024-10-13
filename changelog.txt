@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+  Info:
+    - Use bigger icons for big robots
+    - Add a smaller cheaper nuclear logistic robot
+    - Remove payload setting
+    - Make bigger robots also visually bigger
+    - Make color of robots more red
+---------------------------------------------------------------------------------------------------
 Version: 0.0.2
   Info:
     - Change big construction to fast construction bots
