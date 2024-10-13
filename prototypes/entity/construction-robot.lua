@@ -338,11 +338,13 @@ data:extend {
         ingredients = {
             { "construction-robot", 2 },
             { "se-rtg-equipment", 1 },
-            { "se-superconductive-cable", 8 },
+            { "se-holmium-cable", 8 },
+            { "se-holmium-solenoid", 2 },
             { "se-aeroframe-pole", 8 },
             { "se-aeroframe-scaffold", 4 },
             { "processing-unit", 4 },
         },
+        energy_required = 5,
         result = "construction-robot-nuclear",
     },
     {
@@ -353,10 +355,12 @@ data:extend {
             { "construction-robot", 8 },
             { "se-rtg-equipment-2", 1 },
             { "se-superconductive-cable", 20 },
+            { "se-holmium-solenoid", 8 },
             { "se-aeroframe-pole", 20 },
-            { "se-aeroframe-scaffold", 10 },
+            { "se-aeroframe-bulkhead", 4 },
             { "processing-unit", 10 },
         },
+        energy_required = 60,
         result = "construction-robot-nuclear-fast",
     },
     -- item
