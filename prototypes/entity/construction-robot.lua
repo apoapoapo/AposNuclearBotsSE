@@ -3,7 +3,7 @@ data:extend {
     {
         type = "construction-robot",
         name = "construction-robot-nuclear",
-        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear-colorboost.png",
         icon_size = 32,
         flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
         minable = { hardness = 0.1, mining_time = 0.1, result = "construction-robot-nuclear" },
@@ -168,7 +168,7 @@ data:extend {
     {
         type = "construction-robot",
         name = "construction-robot-nuclear-fast",
-        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear-colorboost-large.png",
         icon_size = 32,
         flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
         minable = { hardness = 0.1, mining_time = 0.1, result = "construction-robot-nuclear-fast" },
@@ -363,7 +363,7 @@ data:extend {
     {
         type = "item",
         name = "construction-robot-nuclear",
-        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear-colorboost.png",
         icon_size = 32,
         subgroup = "logistic-network",
         order = "a[robot]-c[construction-robot]-c[nuclear]",
@@ -373,7 +373,7 @@ data:extend {
     {
         type = "item",
         name = "construction-robot-nuclear-fast",
-        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear.png",
+        icon = "__AposNuclearBotsSE__/graphics/icons/construction-robot-nuclear-colorboost-large.png",
         icon_size = 32,
         subgroup = "logistic-network",
         order = "a[robot]-c[construction-robot]-c[nuclear]",
