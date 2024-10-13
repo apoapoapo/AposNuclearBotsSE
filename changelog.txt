@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+  Info:
+     - Add 2nd tech tree entry (smaller and bigger ones)
+     - Modify tech costs so it fits for SE
+     - Modify robot costs so fits for tech tree
+     - Increase robot build time
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
   Info:
     - Fix payload of small logistic robot
