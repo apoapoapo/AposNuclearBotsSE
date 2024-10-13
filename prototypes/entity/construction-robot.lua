@@ -341,7 +341,7 @@ data:extend {
             { "se-superconductive-cable", 8 },
             { "se-aeroframe-pole", 8 },
             { "se-aeroframe-scaffold", 4 },
-            { "processing-unit", 4 }
+            { "processing-unit", 4 },
         },
         result = "construction-robot-nuclear",
     },
@@ -355,7 +355,7 @@ data:extend {
             { "se-superconductive-cable", 20 },
             { "se-aeroframe-pole", 20 },
             { "se-aeroframe-scaffold", 10 },
-            { "processing-unit", 10 }
+            { "processing-unit", 10 },
         },
         result = "construction-robot-nuclear-fast",
     },

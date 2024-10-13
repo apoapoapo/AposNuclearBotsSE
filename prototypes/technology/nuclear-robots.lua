@@ -17,6 +17,10 @@ data:extend {
                 type = "unlock-recipe",
                 recipe = "logistic-robot-nuclear",
             },
+            {
+                type = "unlock-recipe",
+                recipe = "logistic-robot-nuclear-big",
+            },
         },
         prerequisites = { "construction-robotics", "logistic-robotics", "nuclear-power", "worker-robots-storage-2" },
         unit = {
