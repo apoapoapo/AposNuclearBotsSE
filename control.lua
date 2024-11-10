@@ -52,6 +52,8 @@ script.on_event(defines.events.on_entity_died, function(event)
 
     if recipe_name and game.recipe_prototypes[recipe_name] then
         local recipe = game.recipe_prototypes[recipe_name]
+        local dbg_str = "[item=" .. recipe_name .. "] crashed: Ingredients dropped: "
+
         for _, ingredient in pairs(recipe.ingredients) do
             local amount_to_drop = 0
             if ingredient.name == "se-rtg-equipment" then
@@ -65,9 +67,16 @@ script.on_event(defines.events.on_entity_died, function(event)
             else
                 amount_to_drop = math.random(0, ingredient.amount)
             end
+
+            dbg_str = dbg_str .. " [img=item." .. ingredient.name .. "] " .. amount_to_drop .. "/" .. ingredient.amount
+
             if amount_to_drop > 0 then
                 surface.spill_item_stack(position, {name = ingredient.name, count = amount_to_drop}, false, game.forces.player, false)
             end
+        end
+
+        if global.debug_level >= DebugLevel.VERBOSE then
+            game.print(dbg_str)
         end
     end
 end)
