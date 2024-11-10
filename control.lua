@@ -1,10 +1,44 @@
 local RTG1_PERC = 80
 local RTG2_PERC = 95
+local SETTING_DEBUG = "apos-nuclear-bots-debug-level"
+
 local prototype_names = {
     ["construction-robot-nuclear"] = true,
     ["construction-robot-nuclear-fast"] = true,
     ["logistic-robot-nuclear"] = true,
     ["logistic-robot-nuclear-big"] = true }
+
+local DebugLevel = {
+    OFF = 0,
+    BASIC = 1,
+    VERBOSE = 2,
+}
+
+local function get_debug_level_from_string()
+    local setting_value = settings.global[SETTING_DEBUG].value
+
+    if setting_value == "off" then
+        return DebugLevel.OFF
+    elseif setting_value == "basic" then
+        return DebugLevel.BASIC
+    elseif setting_value == "verbose" then
+        return DebugLevel.VERBOSE
+    end
+end
+
+script.on_init(function()
+    global.debug_level = get_debug_level_from_string()
+end)
+
+script.on_configuration_changed(function()
+    global.debug_level = get_debug_level_from_string()
+end)
+
+script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
+    if event.setting == SETTING_DEBUG then
+        global.debug_level = get_debug_level_from_string()
+    end
+end)
 
 script.on_event(defines.events.on_entity_died, function(event)
     if not prototype_names[event.entity.name] then
