@@ -31,9 +31,6 @@ script.on_init(function()
     global.debug_level = get_debug_level_from_string()
     global.summary_rate = settings.global[SETTING_SUMMARY].value * 3600
     global.died_bots = {}
-    for prototype_name, _ in pairs(prototype_names) do
-        global.died_bots[prototype_name] = 0
-    end
 end)
 
 script.on_configuration_changed(function()
@@ -42,11 +39,6 @@ script.on_configuration_changed(function()
 
     if not global.died_bots then
         global.died_bots = {}
-    end
-    for prototype_name, _ in pairs(prototype_names) do
-        if not global.died_bots[prototype_name] then
-            global.died_bots[prototype_name] = 0
-        end
     end
 end)
 
@@ -65,16 +57,15 @@ script.on_event(defines.events.on_tick, function(event)
             return
         end
 
-        local do_print = false
         local out_str = "Apos Nuclear Bots crash statistics: "
-        for prototype_name, _ in pairs(prototype_names) do
-            local died = global.died_bots[prototype_name]
-            if died > 0 then
-                out_str = out_str .. "\n[item=" .. prototype_name .. "]: " .. died
-                do_print = true
+        local do_print = false
+        for surface_name, surface_died_bots in pairs(global.died_bots) do
+            out_str = out_str .. "\n" .. surface_name .. ": "
+            for prototype_name, died_bots in pairs(surface_died_bots) do
+               out_str = out_str .. " [img=item." .. prototype_name .. "] " .. died_bots .. "  "
             end
+            do_print = true
         end
-
         if do_print then
             game.print(out_str)
         end
@@ -91,7 +82,16 @@ script.on_event(defines.events.on_entity_died, function(event)
     local surface = entity.surface
     local position = entity.position
 
-    global.died_bots[recipe_name] = global.died_bots[recipe_name] + 1
+    if not global.died_bots[surface.name] then
+        global.died_bots[surface.name] = {}
+        for prototype_name, _ in pairs(prototype_names) do
+            if not global.died_bots[surface.name][prototype_name] then
+                global.died_bots[surface.name][prototype_name] = 0
+            end
+        end
+    end
+
+    global.died_bots[surface.name][recipe_name] = global.died_bots[surface.name][recipe_name] + 1
 
     if recipe_name and game.recipe_prototypes[recipe_name] then
         local recipe = game.recipe_prototypes[recipe_name]
